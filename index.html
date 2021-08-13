@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <title>Tip calculater App</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <div class="back-ground">
+        <div class="back-ground-heading">
+            <h4 class="back-ground-text">SPLI</h4>
+            <h4 class="back-ground-text">TTER</h4>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-6 card-after-part">
+                            <form class="f-section">
+                                <label for="username">Bill</label><br>
+                                <div id="first" class="input-group mb-3" onkeydown="forminputchangecolor()">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">$</span>
+                                    </div>
+                                    <input type="text" class="form-control" dir="rtl" placeholder="0" name="username"
+                                        required>
+                                </div>
+                            </form>
+                            <div class="s-section">
+                                <div>
+                                    <label for="custom">Select Tip %</label>
+                                </div>
+                                <div>
+                                    <div class="button">
+                                        <button type="button" class="btn btn-primary">5%</button>
+                                        <button type="button" class="btn btn-primary">10%</button>
+                                        <button type="button" class="btn btn-primary">15%</button>
+    
+                                    </div>
+                                    <div class="button">
+                                        <button type="button" class="btn btn-primary">25%</button>
+                                        <button type="button" class="btn btn-primary">50%</button>
+                                        <input type="number" id="custom-tip" class="form-control custom-button" placeholder="Custom">
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <form class="t-section" >
+                                <label for="username">Number of People</label>
+                                <h6 class="error-message" id="people-error-message">Can't be zero</h6>
+                                <div id="second" class="input-group mb-3" onkeyup="onkeyupFunction()" >
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"> <i class="fa fa-user"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" dir="rtl" placeholder="0" name="username" required><br>
+                                    <p id="second_name" class="red_color"></p>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-sm-6 under-card-background">
+                            <div class="card back-ground-card">
+                                <div class="card-body">
+                                    <div>
+                                        <div class="card-text">
+                                            <div>
+                                                <p class="card-paragraph">Tip Amount</p>
+                                                <p class="card-paragraph-text">/person</p>
+                                            </div>
+                                            <div class="card-count">
+                                                <h1 class="card-count-text">$0.00</h1>
+                                            </div>
+                                        </div>
+                                        <div class="card-text-2">
+                                            <div>
+                                                <p class="card-paragraph">Total</p>
+                                                <p class="card-paragraph-text">/person</p>
+                                            </div>
+                                            <div class="card-count">
+                                                <h1 class="card-count-text">$0.00</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="block" type="reset">RESET</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

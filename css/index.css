@@ -1,0 +1,217 @@
+body {
+    font-family: 'Space Mono', monospace;
+    font-size: 15px;
+    font-weight: 600;
+    color: #657474;
+}
+
+@media (min-width: 1200px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 960px;
+    }
+}
+
+.block {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #0d686b;
+    color: #045d61;
+    padding: 14px 28px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 900;
+}
+
+.back-ground {
+    background-color: #c5e4e7;
+    padding: 100px;
+}
+
+.back-ground-text {
+    font-weight: 600;
+}
+
+.back-ground-heading {
+    text-align: center;
+    letter-spacing: 10px;
+    color: #385b5d;
+    padding-bottom: 60px;
+}
+
+.card {
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #ffffff
+}
+
+.card-after-part {
+    padding: 0 30px;
+}
+
+/* first section */
+
+.f-section {
+    padding: 13px 0;
+}
+
+.input-group-text {
+    background-color: hsl(185, 41%, 94%);
+    color: #9dbbbb;
+    border: white;
+    font-size: 25px;
+}
+
+.form-control {
+    border:white;
+    background-color: hsl(185, 41%, 94%) !important;
+    color: #00474b !important;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.blue_border{
+    border:2px solid #2cc0ae;
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+/* second section */
+
+.s-section {
+    padding: 15px 0;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #00474b;
+    border-color: #00474b;
+    width: 100%;
+    margin-bottom: 10px;
+    height: auto;
+    padding: 10px 0;
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-primary:hover {
+    background-color: #a0e9e2 !important;
+    border-color: #a0e9e2 !important;
+    color: #00474b;
+}
+.btn-primary:focus{
+    background-color: #00474b;
+    border-color: #00474b;
+
+}
+.btn:focus{
+    box-shadow: none !important;
+}
+
+/* .btn-light{
+    width: 150px;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    height: auto;
+    color: hsl(186, 14%, 43%);
+    font-weight: 600;
+    font-size: 20px;
+} */
+
+.btn-light:hover {
+    color: hsl(186, 14%, 43%) !important;
+}
+
+.custom-button {
+    width: 100%;
+    margin-right: 10px;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.custom-button::placeholder {
+    color: #5e7877;
+}
+
+/* third section */
+
+.back-ground-card {
+    background-color: #00474b;
+    border-color: #00474b;
+    padding: 30px 20px;
+}
+
+.t-section {
+    padding-top: 15px;
+}
+.red_border{
+    border:2px solid red !important;
+    border-radius: 5px;
+}
+.red_color{
+    color: red;
+}
+
+/* card text */
+
+.card-text, .card-text-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-text-2 {
+    padding-bottom: 105px;
+    padding-top: 40px;
+}
+
+.card-paragraph {
+    color: #dbfeff;
+    margin-bottom: 0px;
+}
+
+.card-count {
+    color: #2cc0ae;
+}
+
+.card-count-text {
+    font-weight: 900;
+}
+
+.card-paragraph-text {
+    color: #64a0a4;
+    margin-bottom: 0px;
+}
+
+button:focus {
+    outline: none;
+}
+
+.under-card-background {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+}
+
+/* responsive css */
+
+@media only screen and (max-width: 767px) {
+    .responsive #top #wrap_all .container {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
